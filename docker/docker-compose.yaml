@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  cybersoft-frontend:
+    image: nginx:stable
+    container_name: cybersoft-frontend
+    ports: 
+      - 80:80
+    volumes: 
+      - ./config/nginx.conf:/etc/nginx/nginx.conf:ro 
